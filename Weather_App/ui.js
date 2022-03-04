@@ -16,9 +16,11 @@ class UI {
       "src",
       `http://openweathermap.org/img/wn/${weather.weather[0].icon}@2x.png`
     );
-    this.humidity.textContent = weather.main.humidity;
-    this.visibility.textContent = weather.visibility;
-    this.wind.textContent = weather.wind.speed;
-    this.temp.textContent = weather.main.temp;
+    this.humidity.textContent = "Humidity: " + weather.main.humidity;
+    this.visibility.textContent = "Visibility: " + weather.visibility;
+    this.wind.textContent = "Wind Speed: " + weather.wind.speed;
+    this.temp.textContent =
+      "Temperature: " + (weather.main.temp - 273.15).toFixed(1);
   }
 }
+// b = ((a - 32) * 5) / 9;
