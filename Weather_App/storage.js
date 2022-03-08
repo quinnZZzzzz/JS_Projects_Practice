@@ -18,4 +18,4 @@ class Storage {
   }
 }
 
-//deal with modal -- change location and save location to local storage
+//Deal with modal -- change location and save location to local storage
